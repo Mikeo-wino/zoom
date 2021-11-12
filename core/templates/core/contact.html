@@ -1,0 +1,66 @@
+{% extends 'core/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<main>
+    <div class="container">
+
+      <!--Section: Products v.3-->
+      <section class="text-center mb-4">
+
+        <!--Grid row-->
+      <!--  <div class="row wow fadeIn">
+          <div class="col-4 offset-4">
+              <form action="" method="post" id="ContentRequestForm">
+                {% csrf_token %}
+                   {{ form|crispy}}
+                <div class="form-group">
+                  <button type="submit" class="form-control-submit-button">Request for content</button>
+                </div>
+              </form>
+            </div>
+        </div>
+      </section>
+    </div>
+</main> -->
+
+
+<!-- Registration -->
+    <div id="registration" class="form-1 bg-dark-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Put your request here for the content you are looking for</h2>
+                        <p>you are just one click from getting content for your youtube channel or creating content for a youtuber</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i><div class="media-body"><strong>Find content creaters to</strong> prepare content for your youtube channel</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i><div class="media-body"><strong>You do not need to know how to create content </strong>to operate a youtube channel</div>
+                            </li>
+                             <li class="media">
+                                <i class="fas fa-square"></i><div class="media-body"><strong>create tutorials for youtube channels</strong>and get paid in return as a content creater for a youtuber</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+
+                    <!-- Registration Form -->
+                    <form action="" method="post" id="registrationForm">
+                        {% csrf_token %}
+                        {{ form|crispy}}
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">Request for content quotation</button>
+                        </div>
+                    </form>
+                    <!-- end of registration form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-1 -->
+    <!-- end of registration -->
+{% endblock content %}

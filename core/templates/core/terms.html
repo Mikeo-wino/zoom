@@ -1,0 +1,127 @@
+{% extends 'core/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Description">
+    <meta name="author" content="Author">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Terms & Conditions - Contentzoom</title>
+
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="{% static 'images/favicon.png' %}">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+{% block content %}
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Revo</a> -->
+
+            <!-- Image Logo -->
+         <!--   <a class="navbar-brand logo-image" href="index.html"><img src="{% static 'images/logo.svg' %}" alt="alternative"></a>-->
+
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                </ul>
+                <span class="nav-item social-icons">
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header class="ex-header bg-dark-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h1>Terms & Conditions</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-5 pb-5 bg-dark-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <div class="text-box mt-5 mb-5">
+                        <p class="p-large">The app also automatically collects and receives certain information from your computer or mobile device, including the activities you perform on our Website, the Platforms, and the Applications, the type of hardware and software you are using (for example, your operating system or browser).</p>
+                    </div> <!-- end of text-box -->
+
+                    <h2 class="mb-3">1. Each time you visit the website or services</h2>
+                    <p>For example, each time you visit the Website or otherwise use the Services, we automatically collect your IP address, browser and device type, access times, the web page from which you came, the regions from which you navigate the web page , and the web page(s) you access. When you first register for a Leon account.</p>
+                    <p class="mb-5">Under no circumstances shall Contentzoom be liable for any direct, indirect, special, incidental or consequential damages, including, but not limited to, loss of data or profit, arising out of the use, or the inability to use, the materials on this site, even if contentzoom or an authorized representative has been advised of the possibility of such damages.</p>
+                    <h2 class="mb-3">2. content creators and youtubers</h2>
+                    <p class="mb-5">By using any of the Services, or submitting or collecting any Personal Information via the Services, you consent to the collection, transfer, storage disclosure, and use of your Personal Information in the manner set out in this Privacy Policy. If you do not consent to the use of your Personal Information.</p>
+                    <h2 class="mb-3">3. content creators</h2>
+                    <p class="mb-4">By using our platform you agree to be creating unique and genuine work content for youtubers and if found that you copied someone else work you would be liable for that yourself </p>
+                    <ul class="list-unstyled li-space-lg mb-5">
+                        <li class="media">
+                            <strong>1.</strong>
+                            <div class="media-body"><strong>You also agree that </strong>the platform would be charging 20% of the money you have earned on the platform for creating content </div>
+                        </li>
+                        <li class="media">
+                            <strong>2.</strong>
+                            <div class="media-body"><strong> You also agree that</strong>you will be doing quality work that does not compromise quality and only through that you would be guarenteed compensation</div>
+                        </li>
+                    </ul>
+                     <h2 class="mb-3">4. youtubers</h2>
+                    <p class="mb-4">By using our platform you agree to the terms and conditions that have been stated here to guide your relationship with us and the content creators </p>
+                    <ul class="list-unstyled li-space-lg mb-5">
+                        <li class="media">
+                            <strong>1.</strong>
+                            <div class="media-body"><strong>You also agree that </strong> that you would be paying the compensation quoted for you by us for the content produced for you by our content creaters</div>
+                        </li>
+                        <li class="media">
+                            <strong>2.</strong>
+                            <div class="media-body"><strong> You also agree that</strong>the platform would be incharge of the quality of content produced to you by the content creaters</div>
+                        </li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+{% endblock content %}
+</body>
+</html>
